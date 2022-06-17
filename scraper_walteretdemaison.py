@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 URL = 'https://www.walteretdemaison.com/qui-sommes-nous/?fbclid=IwAR3eOtdd3ZNNkP0UEUIrUFumr_OKMGgMFwnUHpHOK7mvbSlrclNBRDE5SCQ'
 
 
-def scrape_all_agents():  # returns dict
+def scrape_all_agents():  # returns list
     response = requests.get(URL)
     soup = BeautifulSoup(response.text, 'html.parser')
 
